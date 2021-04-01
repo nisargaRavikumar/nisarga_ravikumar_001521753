@@ -12,19 +12,19 @@ import java.util.ArrayList;
  * @author harold
  */
 public class CustomerDirectory {
-    ArrayList<Customer> customerList = new ArrayList<Customer>();
+    ArrayList<Customer> CustomerDirectory = new ArrayList<Customer>();
 
-    public ArrayList<Customer> getCustomerList() {
-        return customerList;
+    public ArrayList<Customer> getCustomerDirectory() {
+        return CustomerDirectory;
     }
 
-    public void setCustomerList(ArrayList<Customer> customerList) {
-        this.customerList = customerList;
+    public void setCustomerDirectory(ArrayList<Customer> CustomerDirectory) {
+        this.CustomerDirectory = CustomerDirectory;
     }
-    public void addCustomer(Customer customer){
-        customerList.add(customer);
+    public void addtoCustomerDirectory(Customer customer) {
+        CustomerDirectory.add(customer);
     }
-    public void removeCustomer(Customer customer){
-        customerList.remove(customer);
+    public void removefromCustomerDirectory(Customer customer) {
+        CustomerDirectory.remove(customer);
     }
 }

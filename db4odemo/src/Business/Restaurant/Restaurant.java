@@ -7,7 +7,6 @@ package Business.Restaurant;
 
 import Business.Role.AdminRole;
 import Business.UserAccount.UserAccount;
-import java.awt.Menu;
 
 /**
  *
@@ -17,8 +16,8 @@ public class Restaurant extends UserAccount{
     private String name;
     private String address;
     private String phone;
-    private Menu menu;
-
+    private RestuarantCatalog catalog;
+    
     public Restaurant(String userName, String password,String name, String address, String phone) {
         setUsername(userName);
         setPassword(password);
@@ -26,21 +25,9 @@ public class Restaurant extends UserAccount{
         this.name = name;
         this.address = address;
         this.phone = phone;
-        this.menu = new Menu();
+        this.catalog = new RestuarantCatalog();
     }
 
-    public Restaurant(){
-    
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-    
     public String getName() {
         return name;
     }
@@ -57,17 +44,20 @@ public class Restaurant extends UserAccount{
         this.address = address;
     }
 
-    public Menu getMenu() {
-        return menu;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setMenu(Menu menu) {
-        this.menu = menu;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
-    
-    @Override
-    public String toString() {
-        return this.name;
+
+    public RestuarantCatalog getCatalog() {
+        return catalog;
+    }
+
+    public void setCatalog(RestuarantCatalog catalog) {
+        this.catalog = catalog;
     }
     
 }

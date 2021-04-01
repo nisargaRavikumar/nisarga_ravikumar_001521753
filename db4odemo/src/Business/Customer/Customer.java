@@ -5,7 +5,6 @@
  */
 package Business.Customer;
 
-import Business.Restaurant.Restaurant;
 import Business.Role.CustomerRole;
 import Business.UserAccount.UserAccount;
 
@@ -13,50 +12,42 @@ import Business.UserAccount.UserAccount;
  *
  * @author harold
  */
-public class Customer extends UserAccount {
-    private String name;
-    private String address;
-    private String phone;
-  
-
-    public Customer(String userName, String password, String name, String address, String phone) {
-        setUsername(userName);
-        setPassword(password);
-        setRole(new CustomerRole());
-        this.name = name;
-        this.address = address;
-        this.phone = phone;
-    }
+public class Customer extends UserAccount{
+    private String Name;
+    private String Address;
+    private String Phone;
     
-    public String getName() {
-        return name;
+    public Customer(String userName,String Name, String Password, String Address, String Phone) {
+        this.Address = Address;
+        this.Name = Name;
+        this.Phone = Phone;
+        setUsername(Name);
+        setPassword(Password);
+        setRole(new CustomerRole());
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String Name) {
+        this.Name = Name;
     }
 
     public String getAddress() {
-        return address;
+        return Address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setAddress(String Address) {
+        this.Address = Address;
     }
 
     public String getPhone() {
-        return phone;
+        return Phone;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhone(String Phone) {
+        this.Phone = Phone;
     }
-
-    @Override
-    public String toString() {
-        return this.name;
-    }
-    
-    
     
 }

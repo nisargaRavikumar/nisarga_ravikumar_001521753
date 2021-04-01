@@ -7,12 +7,12 @@ package Business;
 import Business.Customer.CustomerDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
 import Business.Employee.EmployeeDirectory;
+import Business.WorkQueue.WorkQueue;
+import java.util.ArrayList;
 import Business.Restaurant.RestaurantDirectory;
+import Business.Restaurant.RestuarantCatalog;
 import Business.Role.Role;
 import Business.UserAccount.UserAccountDirectory;
-import Business.WorkQueue.WorkQueue;
-import java.awt.Menu;
-import java.util.ArrayList;
 
 /**
  *
@@ -24,12 +24,12 @@ public abstract class Organization {
     private WorkQueue workQueue;
     private EmployeeDirectory employeeDirectory;
     private UserAccountDirectory userAccountDirectory;
+    private int organizationID;
+    private static int counter=0;
     private CustomerDirectory customerDirectory;
     private DeliveryManDirectory deliveryManDirectory;
     private RestaurantDirectory restaurantDirectory;
-    private Menu itemList;
-    private int organizationID;
-    private static int counter=0;
+    private RestuarantCatalog dishesList;
     
     public enum Type{
         RestaurantAdmin("RestaurantAdmin"),
@@ -52,6 +52,10 @@ public abstract class Organization {
         employeeDirectory = new EmployeeDirectory();
         userAccountDirectory = new UserAccountDirectory();
         organizationID = counter;
+        dishesList = new RestuarantCatalog();
+        deliveryManDirectory = new DeliveryManDirectory();
+        customerDirectory = new CustomerDirectory();
+        restaurantDirectory = new RestaurantDirectory();
         ++counter;
     }
     public Organization(){
@@ -87,11 +91,6 @@ public abstract class Organization {
         this.workQueue = workQueue;
     }
 
-    @Override
-    public String toString() {
-        return name;
-    }
-
     public CustomerDirectory getCustomerDirectory() {
         return customerDirectory;
     }
@@ -116,20 +115,18 @@ public abstract class Organization {
         this.restaurantDirectory = restaurantDirectory;
     }
 
-    public Menu getItemList() {
-        return itemList;
+    public RestuarantCatalog getDishesList() {
+        return dishesList;
     }
 
-    public void setItemList(Menu itemList) {
-        this.itemList = itemList;
+    public void setDishesList(RestuarantCatalog dishesList) {
+        this.dishesList = dishesList;
     }
 
-    public static int getCounter() {
-        return counter;
-    }
-
-    public static void setCounter(int counter) {
-        Organization.counter = counter;
+    
+   @Override
+    public String toString() {
+        return name;
     }
     
     

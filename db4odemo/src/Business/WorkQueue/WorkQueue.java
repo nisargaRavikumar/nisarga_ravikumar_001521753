@@ -14,18 +14,17 @@ import java.util.List;
  */
 public class WorkQueue {
     
-    private List<WorkRequest> workRequestList;
+    private ArrayList<WorkRequest> workRequestList;
 
     public WorkQueue() {
         workRequestList = new ArrayList();
     }
 
-    public List<WorkRequest> getWorkRequestList() {
+    public ArrayList<WorkRequest> getWorkRequestList() {
         return workRequestList;
     }
-    
     public List<WorkRequest> getWorkRequestListCustomer(UserAccount account){
-        List<WorkRequest> workRequestListCustomer = new ArrayList();
+        List<WorkRequest> workRequestListCustomer = new ArrayList<>();
         for(WorkRequest workRequest : workRequestList){
             if(workRequest.getCustomer() != null){
                 UserAccount customerAccount = workRequest.getCustomer();
@@ -38,7 +37,7 @@ public class WorkQueue {
     }
     
     public List<WorkRequest> getWorkRequestListRestaurant(UserAccount account){
-        List<WorkRequest> workRequestListRestaurant = new ArrayList();
+        List<WorkRequest> workRequestListRestaurant = new ArrayList<>();
         for(WorkRequest workRequest : workRequestList){
             if(workRequest.getRestaurant() != null){
                 UserAccount restuarantAccount = workRequest.getRestaurant();
@@ -51,7 +50,7 @@ public class WorkQueue {
     }
     
     public List<WorkRequest> getWorkRequestListDeliveryMan(UserAccount account){
-        List<WorkRequest> workRequestListDelivery = new ArrayList();
+        List<WorkRequest> workRequestListDelivery = new ArrayList<>();
         for(WorkRequest workRequest : workRequestList){
             if(workRequest.getDeliverMan()!= null){
                 UserAccount deliveryManAccount = workRequest.getDeliverMan();
@@ -66,5 +65,4 @@ public class WorkQueue {
     public void addWorkRequest(WorkRequest workRequest){
        workRequestList.add(workRequest); 
     }
-    
 }

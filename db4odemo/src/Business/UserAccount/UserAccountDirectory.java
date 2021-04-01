@@ -49,4 +49,8 @@ public class UserAccountDirectory {
         }
         return true;
     }
+    public UserAccount addUserAcount(UserAccount useraccount) {
+        userAccountList.add(useraccount);
+        return useraccount;
+    }
 }
