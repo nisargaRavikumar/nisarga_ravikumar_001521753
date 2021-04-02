@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class ProcessOrderJPanel extends javax.swing.JPanel {
 
@@ -84,7 +84,7 @@ private void display() {
         customerNameValue = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 153));
+        setBackground(new java.awt.Color(255, 102, 102));
 
         btnStatus.setText("Pick Order");
         btnStatus.addActionListener(new java.awt.event.ActionListener() {

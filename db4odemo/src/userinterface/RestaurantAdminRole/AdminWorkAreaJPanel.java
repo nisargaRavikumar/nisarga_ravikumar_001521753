@@ -14,7 +14,7 @@ import userinterface.LoginJPanel;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class AdminWorkAreaJPanel extends javax.swing.JPanel {
 
@@ -48,30 +48,24 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
         LeftPanel = new javax.swing.JPanel();
         manageOrganizationJButton = new javax.swing.JButton();
         manageEmployeeJButton = new javax.swing.JButton();
-        userJButton = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         RightPanel = new javax.swing.JPanel();
 
         setLayout(new java.awt.BorderLayout());
 
-        manageOrganizationJButton.setText("Manage Orders");
+        LeftPanel.setBackground(new java.awt.Color(255, 204, 204));
+
+        manageOrganizationJButton.setText("Orders");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
 
-        manageEmployeeJButton.setText("Manage menu");
+        manageEmployeeJButton.setText("Menu");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageEmployeeJButtonActionPerformed(evt);
-            }
-        });
-
-        userJButton.setText("INFO");
-        userJButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userJButtonActionPerformed(evt);
             }
         });
 
@@ -90,44 +84,33 @@ public class AdminWorkAreaJPanel extends javax.swing.JPanel {
                 .addContainerGap()
                 .addGroup(LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(manageOrganizationJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(userJButton, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE)
                     .addComponent(manageEmployeeJButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        LeftPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {manageEmployeeJButton, manageOrganizationJButton, userJButton});
+        LeftPanelLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jButton1, manageEmployeeJButton, manageOrganizationJButton});
 
         LeftPanelLayout.setVerticalGroup(
             LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LeftPanelLayout.createSequentialGroup()
                 .addGap(56, 56, 56)
                 .addComponent(manageOrganizationJButton)
-                .addGap(18, 18, 18)
-                .addComponent(userJButton)
-                .addGap(18, 18, 18)
+                .addGap(32, 32, 32)
                 .addComponent(manageEmployeeJButton)
-                .addGap(30, 30, 30)
+                .addGap(29, 29, 29)
                 .addComponent(jButton1)
-                .addContainerGap(84, Short.MAX_VALUE))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
 
         jSplitPane1.setLeftComponent(LeftPanel);
 
-        RightPanel.setBackground(new java.awt.Color(0, 204, 153));
+        RightPanel.setBackground(new java.awt.Color(255, 102, 102));
         RightPanel.setLayout(new java.awt.CardLayout());
         jSplitPane1.setRightComponent(RightPanel);
 
         add(jSplitPane1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void userJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userJButtonActionPerformed
-        // TODO add your handling code here:
-        ManageRestaurantInformationJPanel manageRestaurantInformationJPanel = new ManageRestaurantInformationJPanel(RightPanel,ecosystem, userAccount);
-        RightPanel.add("ManageRestaurantInformationJPanel",manageRestaurantInformationJPanel);
-        CardLayout layout = (CardLayout) RightPanel.getLayout();
-        layout.next(RightPanel);
-    }//GEN-LAST:event_userJButtonActionPerformed
 private void manageOrders() {
     ManageOrderJPanel manageOrderJPanel = new ManageOrderJPanel(RightPanel,ecosystem,userAccount);
         RightPanel.add("ManageOrderJPanel",manageOrderJPanel);
@@ -166,6 +149,5 @@ private void backAction() {
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JButton manageEmployeeJButton;
     private javax.swing.JButton manageOrganizationJButton;
-    private javax.swing.JButton userJButton;
     // End of variables declaration//GEN-END:variables
 }

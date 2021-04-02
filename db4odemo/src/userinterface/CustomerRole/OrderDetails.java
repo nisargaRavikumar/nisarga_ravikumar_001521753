@@ -16,7 +16,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class OrderDetails extends javax.swing.JPanel {
 
@@ -95,7 +95,7 @@ public class OrderDetails extends javax.swing.JPanel {
         customerFeedbackLabel = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 153));
+        setBackground(new java.awt.Color(255, 102, 102));
 
         message.setForeground(new java.awt.Color(255, 255, 255));
         message.setText("<value>");
@@ -151,7 +151,7 @@ public class OrderDetails extends javax.swing.JPanel {
         });
         cartScrollPane.setViewportView(tblCart);
 
-        customerFeedBackPanel.setBackground(new java.awt.Color(0, 204, 153));
+        customerFeedBackPanel.setBackground(new java.awt.Color(255, 102, 102));
 
         submitFeedbackButton.setText("Submit Feedback");
         submitFeedbackButton.addActionListener(new java.awt.event.ActionListener() {
@@ -259,7 +259,7 @@ public class OrderDetails extends javax.swing.JPanel {
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(customerFeedBackPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(cartScrollPane, javax.swing.GroupLayout.Alignment.TRAILING))))
+                            .addComponent(cartScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 742, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()

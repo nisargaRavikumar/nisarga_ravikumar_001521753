@@ -19,7 +19,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class ManageOrderDetailsJPanel extends javax.swing.JPanel {
 
@@ -135,7 +135,7 @@ private void display() {
         acceptOrder = new javax.swing.JButton();
         declineOrder = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 204, 153));
+        setBackground(new java.awt.Color(255, 102, 102));
 
         btnBack1.setText("<Back");
         btnBack1.addActionListener(new java.awt.event.ActionListener() {
@@ -175,7 +175,7 @@ private void display() {
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Total");
 
-        customerFeedBackPanel.setBackground(new java.awt.Color(0, 204, 153));
+        customerFeedBackPanel.setBackground(new java.awt.Color(255, 102, 102));
 
         customerFeedbackLabel.setForeground(new java.awt.Color(255, 255, 255));
         customerFeedbackLabel.setText("Customer Feedback");
@@ -198,7 +198,7 @@ private void display() {
         customerFeedBackPanelLayout.setVerticalGroup(
             customerFeedBackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(customerFeedBackPanelLayout.createSequentialGroup()
-                .addContainerGap(64, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(customerFeedBackPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, customerFeedBackPanelLayout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -302,7 +302,7 @@ private void display() {
                                                 .addComponent(addDeliveryPerson))
                                             .addComponent(deliveryManNameValue, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE))))
                                 .addGap(0, 0, Short.MAX_VALUE))))
-                    .addComponent(cartScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(cartScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 666, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -367,7 +367,7 @@ private void display() {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(acceptOrder)
                     .addComponent(declineOrder))
-                .addGap(65, 65, 65)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(customerFeedBackPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );

@@ -64,6 +64,8 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
+        LeftJPanel.setBackground(new java.awt.Color(255, 204, 204));
+
         Placeorderbtn.setText("Place Order");
         Placeorderbtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +116,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
 
         jSplitPane1.setLeftComponent(LeftJPanel);
 
-        RightJPanel.setBackground(new java.awt.Color(0, 204, 153));
+        RightJPanel.setBackground(new java.awt.Color(255, 102, 102));
         RightJPanel.setLayout(new java.awt.CardLayout());
         jSplitPane1.setRightComponent(RightJPanel);
 

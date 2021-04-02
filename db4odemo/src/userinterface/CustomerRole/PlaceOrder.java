@@ -26,7 +26,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class PlaceOrder extends javax.swing.JPanel {
 
@@ -165,7 +165,7 @@ public boolean isItemSelected(dishes item) {
         jLabel4 = new javax.swing.JLabel();
         totalPrice = new javax.swing.JTextField();
 
-        setBackground(new java.awt.Color(0, 204, 153));
+        setBackground(new java.awt.Color(255, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N

@@ -7,7 +7,7 @@ package Business.Restaurant;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class dishes {
     private String Name;

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class RestuarantCatalog {
     ArrayList<dishes> dishesList = new ArrayList<dishes>();

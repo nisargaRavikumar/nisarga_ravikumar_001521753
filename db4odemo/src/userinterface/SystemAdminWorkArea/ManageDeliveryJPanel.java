@@ -17,7 +17,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class ManageDeliveryJPanel extends javax.swing.JPanel {
 
@@ -61,9 +61,9 @@ public class ManageDeliveryJPanel extends javax.swing.JPanel {
         deliverydelete = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 153));
+        setBackground(new java.awt.Color(255, 102, 102));
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 153));
+        jPanel1.setBackground(new java.awt.Color(255, 102, 102));
 
         DeliveryTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -75,7 +75,7 @@ public class ManageDeliveryJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(DeliveryTable);
 
-        jPanel2.setBackground(new java.awt.Color(0, 204, 153));
+        jPanel2.setBackground(new java.awt.Color(255, 102, 102));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Name");
@@ -140,12 +140,11 @@ public class ManageDeliveryJPanel extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(deliverymodify)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(deliverydelete)
-                        .addGap(0, 60, Short.MAX_VALUE))
-                    .addComponent(DeliveryNameJfld)
-                    .addComponent(DeliveryPnofld)
-                    .addComponent(deliveryunamefld)
-                    .addComponent(deliverypassfld))
+                        .addComponent(deliverydelete))
+                    .addComponent(DeliveryNameJfld, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DeliveryPnofld, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deliveryunamefld, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(deliverypassfld, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 

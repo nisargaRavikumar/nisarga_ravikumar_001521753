@@ -54,6 +54,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
+        jPanel3.setBackground(new java.awt.Color(255, 204, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         deliverypplbtn.setText("Delivery People");
@@ -86,11 +87,11 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 120, -1));
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 120, -1));
 
         jSplitPane1.setLeftComponent(jPanel3);
 
-        RightPanel.setBackground(new java.awt.Color(0, 204, 153));
+        RightPanel.setBackground(new java.awt.Color(255, 102, 102));
         RightPanel.setLayout(new java.awt.CardLayout());
         jSplitPane1.setRightComponent(RightPanel);
 

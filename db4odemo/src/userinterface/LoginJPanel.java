@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class LoginJPanel extends javax.swing.JPanel {
 
@@ -54,7 +54,7 @@ public class LoginJPanel extends javax.swing.JPanel {
         jLoginButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 204, 153));
+        setBackground(new java.awt.Color(255, 102, 102));
 
         jUserNamelabel.setForeground(new java.awt.Color(255, 255, 255));
         jUserNamelabel.setText("UserName");

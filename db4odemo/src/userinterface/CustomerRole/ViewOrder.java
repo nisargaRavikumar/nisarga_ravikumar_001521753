@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Karthik
+ * @author nisar
  */
 public class ViewOrder extends javax.swing.JPanel {
 
@@ -85,7 +85,7 @@ private void initListners() {
         jScrollPane1 = new javax.swing.JScrollPane();
         StatusTable = new javax.swing.JTable();
 
-        setBackground(new java.awt.Color(0, 204, 153));
+        setBackground(new java.awt.Color(255, 102, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
